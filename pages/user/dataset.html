@@ -15,24 +15,32 @@
 <body onload="checarSessao(); atualizarHeader(); mostrarDatasets();">
     
     <div class="container"> 
+
         <header>
             <nav>
                 <ul>
-                    <div>
+                    <div class="link-hover">
                         <div id="hamburguer" class="hamburguer">
                             <span>☰</span>
                         </div>
-                        <li><a href="../index.html"><img src="../img/infovet_img.png" alt="" class="logo-infomed"></a></li>
-                        <li><a href="../pages/datasets.html">Datasets</a></li>
-                        <li><a href="../pages/registros.html">Modelos</a></li>
+    
+                        <li><a href="../../index.html"><img src="../../img/infovet_img.png" alt="" class="logo-infomed"></a></li>
+                        <li><a href="../datasets.html">Datasets</a></li>
+                        <li><a href="../registros.html">Modelos</a></li>
                     </div>
-                    <div>
+    
+                    <div id="header-direita">
                         <form id="form_search">
-     
                             <input type="text" placeholder="Pesquisar" id="input_search" />
                         </form>
-                        <li><a href="../pages/login.html" class="btn-header" id="btn-entrar">Entrar</a></li>
-                        <li id="cadastro"><a href="../pages/cadastro.html" class="btn-header" id="btn-cadastrar">Cadastrar</a></li>
+    
+                        <div id="headerDeslogado" style="display: flex; gap: 10px;">
+                            <li><a href="../login.html" class="btn-header" id="btn-entrar">Entrar</a></li>
+                            <li id="cadastro"><a href="../cadastro.html" class="btn-header" id="btn-cadastrar">Cadastrar</a></li>
+                        </div>
+    
+                        <div id="headerLogado" style="display: none;">
+                            </div>
                     </div>
                 </ul>
             </nav>

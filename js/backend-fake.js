@@ -135,7 +135,7 @@ async function cadastrar(event) {
     }
 
     cadastrarFake(login, email, senha);
-    alert("Usuário cadastrado com sucesso!");
+
 
     window.location.href = "login.html";
     return false; // Retorna false para evitar o envio do formulário
@@ -149,8 +149,6 @@ async function fazerLogin(event) {
     const senha = document.getElementById("loginSenha").value.trim();
 
     if (loginFake(login, senha)) {
-        alert("Login realizado!");
-        // Redireciona para a página inicial
         window.location.href = "../index.html"; 
     } else {
         alert("Login inválido. Verifique suas credenciais.");
@@ -238,7 +236,7 @@ function checarSessao() {
 // Botão de Logout no Header
 function sair() {
     logoutFake();
-    window.location.href = "../pages/login.html"; 
+    window.location.href = "https://giovannipereira05.github.io/Frontend/pages/login.html"; 
 }
 
 function atualizarHeader() {
