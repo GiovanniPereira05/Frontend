@@ -256,7 +256,7 @@ function atualizarHeader() {
         // Conteúdo do cabeçalho logado (Meus Datasets, Nome, Email e Sair)
         headerLogado.innerHTML = `
             <div style="display: flex; gap: 10px; align-items: center;">
-                <a href="../pages/user/dataset.html" class="btn-header" style="background-color: white; color: black;">Meus Datasets</a>
+                <a href="../../pages/user/dataset.html" class="btn-header" style="background-color: white; color: black;">Meus Datasets</a>
                 <div style="display: flex; flex-direction: column; align-items: flex-end;">
                     <h2 style="margin: 0; font-size: 18px;">Olá, ${user.nome}</h2>
                     <p style="margin: 0;"><strong>Email:</strong> <span id="perfilEmail">${user.email}</span></p>
