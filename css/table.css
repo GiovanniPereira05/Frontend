@@ -1,0 +1,24 @@
+table {
+    border: 1px solid;
+    width: 100%;
+}
+
+
+
+table, td, th {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+    color: white;
+    background: rgb(7, 7, 7);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.table-container {
+    width: 100%;
+}

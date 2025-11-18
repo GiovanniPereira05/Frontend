@@ -1,0 +1,59 @@
+.datasets {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    
+
+}
+
+.dataset {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c7c7c7;
+    border-radius: 9%;
+    max-width: 17%;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    max-height: 300px;
+}
+
+.dataset:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.dataset-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 15%;
+
+}
+
+.dataset-title {
+    font-size: 1vw;
+}
+
+.dataset-desc {
+    font-size: 0.8vw;
+    color: #b8b8b8;
+}
+.dataset-image {
+    width: 100%;
+    max-height: 45%;
+    border-radius: 13% 13% 0px 0px;
+}
+
+
+
+.sep {
+    min-height: 20px;
+    box-shadow: 0 4px 6px -6px #333; 
+}

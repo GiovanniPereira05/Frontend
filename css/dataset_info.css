@@ -1,0 +1,128 @@
+hr {
+    border-radius: 20%;
+    color: #E8E8E8;
+}
+
+.dataset-name {
+    gap: 10px;
+}
+
+.trash-icon {
+    width: 38px;
+}
+
+.public {
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    background-color: green;
+    color: #E8E8E8;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cab-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dataset-image-info{
+    border-radius: 10%;
+    max-width: 60%;
+}
+
+.cab-download {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: end;
+}
+
+.avatar {
+    width: 24px;
+}
+
+.download-button {
+    background-color: #1D1D1D;
+    width: 60%;
+    height: 36px;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.arquivos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-button {
+    background-color: #1D1D1D;
+    width: 200px;
+    height: 36px;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.pen-icon {
+    width: 24px;
+}
+.info-card {
+    align-items: center;
+    gap: 10px;
+}
+
+.info-card p {
+    color: #6D6D6D;
+}
+
+.tag {
+    border: 1px solid #5F6368;
+    background-color: white;
+    color: #5F6368;
+    height: 36px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dataset-options {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+}
+
+.desc {
+    width: 80%;
+}
+
+.desc p{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+#lixeira_button{
+    all: unset;
+    cursor: pointer;
+}
+
