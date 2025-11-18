@@ -1,0 +1,84 @@
+/* create_dataset.css - Estilo Aprimorado (Preto e Branco) */
+
+.form_dataset {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px; /* Um pouco mais largo para melhor leitura */
+    width: 90%; /* Responsividade */
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; /* Linha sutil */
+}
+
+.form_dataset h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.form_dataset form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form_dataset label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #444;
+    font-size: 0.95em;
+}
+
+.input_login,
+.form_dataset textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box; /* Inclui padding e border na largura */
+    transition: border-color 0.3s;
+}
+
+.input_login:focus,
+.form_dataset textarea:focus {
+    border-color: #000; /* Borda preta ao focar */
+    outline: none;
+}
+
+.form_dataset textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#input_submit_container {
+    margin-top: 20px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: black; /* Fundo escuro */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+

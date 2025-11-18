@@ -12,31 +12,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
-<body>
+<body onload="checarSessao(); atualizarHeader();">
+    
     
     <div class="container">
         <header>
-           <nav>
-               <ul>
-                   <div class="link-hover">
-                       <div id="hamburguer" class="hamburguer">
-                           <span>☰</span>
-                       </div>
-                       <li><a href="../info_vet/index.html"><img src="../info_vet/img/infovet_img.png" alt="" class="logo-infomed"></a></li>
-                       <li><a href="../info_vet/pages/datasets.html">Datasets</a></li>
-                       <li><a href="../info_vet/pages/registros.html">Modelos</a></li>
-                   </div>
-                   <div>
-                       <form id="form_search">
-    
-                           <input type="text" placeholder="Pesquisar" id="input_search" />
-                       </form>
-                       <li><a href="../info_vet/pages/login.html" class="btn-header" id="btn-entrar">Entrar</a></li>
-                       <li id="cadastro"><a href="../info_vet/pages/cadastro.html" class="btn-header" id="btn-cadastrar">Cadastrar</a></li>
-                   </div>
-               </ul>
-           </nav>
-       </header>
+            <nav>
+                <ul>
+                    <div class="link-hover">
+                        <div id="hamburguer" class="hamburguer">
+                            <span>☰</span>
+                        </div>
+        
+                        <li><a href="../info_vet/index.html"><img src="../../img/" alt="" class="logo-infomed"></a></li>
+                        <li><a href="../info_vet/pages/datasets.html">Datasets</a></li>
+                        <li><a href="../info_vet/pages/registros.html">Modelos</a></li>
+                    </div>
+        
+                    <div>
+                        <form id="form_search">
+                            <input type="text" placeholder="Pesquisar" id="input_search" />
+                        </form>
+        
+                        <!-- 🔥 VISUAL PARA QUANDO NÃO ESTIVER LOGADO -->
+                        <div id="headerDeslogado" style="display: flex; gap: 10px;">
+                            <li><a href="../info_vet/pages/login.html" class="btn-header" id="btn-entrar">Entrar</a></li>
+                            <li id="cadastro"><a href="../info_vet/pages/cadastro.html" class="btn-header" id="btn-cadastrar">Cadastrar</a></li>
+                        </div>
+        
+                        <!-- 🔥 VISUAL PARA QUANDO ESTIVER LOGADO -->
+                        <div id="headerLogado" style="display: none;">
+                            <h2 style="margin: 0; font-size: 18px;">Meu Perfil</h2>
+                            <p style="margin: 0;"><strong>Nome:</strong> <span id="perfilNome"></span></p>
+                            <p style="margin: 0;"><strong>Email:</strong> <span id="perfilEmail"></span></p>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        
        
 
        
@@ -213,6 +227,7 @@
 
         
 
-    <script src="../info_vet/js/headerSidebar.js"></script>
+    <script src="js/headerSidebar.js"></script>
+    <script src="js/backend-fake.js"></script>
 </body>
 </html>

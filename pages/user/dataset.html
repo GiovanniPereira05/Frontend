@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Datasets | Infovet</title>
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/datasets.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/user/dataset.css">
+    <link rel="icon" href="img/icon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body onload="checarSessao(); atualizarHeader(); mostrarDatasets();">
+    
+    <div class="container"> 
+        <header>
+            <nav>
+                <ul>
+                    <div class="link-hover">
+                        <div id="hamburguer" class="hamburguer">
+                            <span>☰</span>
+                        </div>
+                        
+                        <li><a href="../../index.html"><img src="../../img/infovet_img.png" alt="" class="logo-infomed"></a></li>
+                        <li><a href="../pages/datasets.html">Datasets</a></li>
+                        <li><a href="../pages/registros.html">Modelos</a></li>
+                    </div>
+                    
+                    <div id="header-direita">
+                        <form id="form_search">
+                            <input type="text" placeholder="Pesquisar" id="input_search" />
+                        </form>
+                        
+                        <div id="headerDeslogado" style="display: flex; gap: 10px;">
+                            <li><a href="../pages/login.html" class="btn-header" id="btn-entrar">Entrar</a></li>
+                            <li id="cadastro"><a href="../pages/cadastro.html" class="btn-header" id="btn-cadastrar">Cadastrar</a></li>
+                        </div>
+                        
+                        <div id="headerLogado" style="display: none;">
+                            </div>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="dataset-main">
+            <div>
+                <div class="dataset-header-control">
+                    <h2>Meus Datasets</h2>
+                    <a href="criar_dataset.html" class="create-dataset-button">
+                        + Criar Dataset
+                    </a>
+                </div>
+                
+                <section class="sec-1 datasets" id="userDatasetsSection"> 
+                    </section>
+            </div>
+        </main>
+    </div> <footer>
+        <div class="footer-logo">
+            <img src="../../img/infovet_img.png" class="logo-footer">
+        </div>
+        <div class="footer-info">
+            <div class="footer-bottom">
+                <p>Created by Matheus, Marcos, Giovanni</p>
+            </div>
+        </div>
+        <div class="cont-icons">
+            <a href=""><img src="../../img/zap.svg" class="cont-icon" alt=""></a>
+            <a href=""><img src="../../img/linkedin.svg" class="cont-icon" alt=""></a>
+            <a href=""><img src="../../img/insta.svg" class="cont-icon" alt=""></a>
+        </div>
+    </footer>
+    <script src="../../js/headerSidebar.js"></script>
+    <script src="../../js/backend-fake.js"></script>
+</body>
+</html>

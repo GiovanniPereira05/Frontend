@@ -1,0 +1,126 @@
+/* dataset.css - Estilo de Card (Index com Controles) */
+
+/* -----------------------------
+   Seção de Listagem (Header + Main)
+   ----------------------------- */
+
+/* O seu header de lista e botão "Criar Dataset" */
+.dataset-header-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* -----------------------------
+   Contêiner de Cards (Flexbox)
+   ----------------------------- */
+
+.datasets { /* Classe 'sec-1 datasets' */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Alinha os cards à esquerda */
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px; /* Espaço entre os cards */
+}
+
+/* -----------------------------
+   Estilo do Card Individual (.dataset)
+   ----------------------------- */
+
+.dataset {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c7c7c7;
+    /* Usando 17% para 5 colunas, mas ajustando para ser responsivo com 22% (4 colunas) 
+       ou 18% (pouco menos de 5 colunas). O uso de % fixa é arriscado. */
+    max-width: 18%; /* Ajuste para caber 5 colunas em telas maiores, use 22% para 4 */
+    min-width: 150px; /* Garante que não fique ilegível em telas menores */
+    border-radius: 9%; /* Arredondamento do index */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    /* Altura removida para se adaptar ao conteúdo */
+}
+
+.dataset a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.dataset:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); /* Movimento mais sutil */
+}
+
+/* -----------------------------
+   Imagem
+   ----------------------------- */
+.dataset-image {
+    width: 100%;
+    /* Altura da imagem para seguir a proporção do index */
+    max-height: 45%; 
+    object-fit: cover;
+    border-radius: 9% 9% 0px 0px; /* Adapta o arredondamento */
+}
+
+/* -----------------------------
+   Informações e Controles
+   ----------------------------- */
+.dataset-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 10px 15px 10px; /* Padding ajustado para o espaço 10% */
+    flex-grow: 1; /* Permite que este bloco ocupe o espaço restante */
+}
+
+.dataset-title {
+    /* Usando viewport units para replicar o index, mas com fallback */
+    font-size: 1em; 
+    font-weight: bold;
+    margin: 0;
+}
+
+.dataset-desc {
+    font-size: 0.85em;
+    color: #b8b8b8;
+    margin: 0;
+}
+
+/* Controles (Data e Botão) */
+.dataset-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: auto; /* Empurra os controles para o final do card */
+    padding-top: 10px;
+    border-top: 1px dashed #eee;
+}
+
+.dataset-date {
+    font-size: 0.8em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.btn-excluir {
+    width: 100%; /* Botão com largura total */
+    padding: 6px 10px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85em;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.btn-excluir:hover {
+    background-color: #b71c1c;
+}

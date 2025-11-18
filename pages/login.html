@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../css/footer.css">
 </head>
 
-<body>
+<body onload="checarSessao(); atualizarHeader();">
+
 
     <div class="container">
         
@@ -64,18 +65,18 @@
                     <form id="formLogin">
                         <div>
                             <label for="login">Login</label>
-                            <input class="input_login" type="text" name="login" id="login" required
+                            <input class="input_login" type="text" name="login" id="loginUsuario" required
                                 placeholder="Entre com seu usuário ou email" />
                         </div>
         
                         <div>
                             <label for="senha">Senha</label>
-                            <input class="input_login" type="password" name="senha" id="senha" required
+                            <input class="input_login" type="password" name="senha" id="loginSenha" required
                                 placeholder="Entre com sua senha" />
                         </div>
         
                         <div id="input_submit_container">
-                            <input class="input_login" type="submit" value="Entrar" />
+                            <input class="input_login" type="submit" value="Entrar" onclick="fazerLogin(); return false;" />
                         </div>
         
                         <div class="forgot_password">
@@ -112,5 +113,5 @@
 </body>
 
 <script src="../js/headerSidebar.js"></script>
-<script src="../js/login.js"></script>
+<script src="../js/backend-fake.js"></script>
 </html>
