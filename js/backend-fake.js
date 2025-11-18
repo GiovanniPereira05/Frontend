@@ -182,22 +182,13 @@ function enviarDataset(event) {
     if (criarDatasetFake(nome, descricao)) {
         alert("Dataset criado com sucesso!");
         // Redireciona para a página de Meus Datasets
-        window.location.href = "/pages/user/dataset.html";
+        window.location.href = "../../pages/user/dataset.html";
     } else {
-        alert("Falha ao criar Dataset. Você está logado?");
+        alert("Falha ao criar Dataset.");
     }
 }
 
 
-// Listar na tela (Chamada no 'user/dataset.html')
-// backend-fake.js
-
-// ... (código anterior) ...
-
-// Listar na tela
-// backend-fake.js
-
-// ... (código anterior) ...
 
 // Listar na tela
 function mostrarDatasets() {
@@ -217,7 +208,7 @@ function mostrarDatasets() {
         // Estrutura de card usando as classes do index, mas com data e botão
         div.innerHTML += `
             <div class="dataset">
-                <a href="../pages/dataset.html?id=${ds.id}">
+                <a href="../../pages/dataset.html?id=${ds.id}">
                     <img src="../../img/datasets/dataset_1.png" alt="Dataset ${ds.nome}" class="dataset-image">
                     <div class="dataset-info">
                         <h1 class="dataset-title">${ds.nome}</h1>
@@ -270,7 +261,7 @@ function atualizarHeader() {
                     <h2 style="margin: 0; font-size: 18px;">Olá, ${user.nome}</h2>
                     <p style="margin: 0;"><strong>Email:</strong> <span id="perfilEmail">${user.email}</span></p>
                 </div>
-                <button class="btn-header" onclick="sair()" style="margin-top: 5px;">Sair</button>
+                <button class="btn-header" onclick="sair()" style="margin-top: 5px; background-color: white; color: black; cursor: pointer;">Sair</button>
             </div>
         `;
         headerLogado.style.display = "flex"; // Usa flex para alinhar os elementos
